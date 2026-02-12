@@ -42,7 +42,13 @@ namespace TP_Poker_console.Game
 
         public List<Card> DrawCommunityCards()
         {
-            throw new NotImplementedException();
+            List<Card> communityCards = new List<Card>(); for (int i = 0; i < 5; i++) { communityCards.Add(_deck.Draw()); }
+            return communityCards;
+        }
+
+        public string CheckResult(User.User player, User.User opponent, List<Card> communityCards)
+        {
+            return String.Empty;
         }
     }
 }
