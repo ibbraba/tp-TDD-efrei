@@ -9,5 +9,7 @@ namespace TP_Poker_console
     public interface IUserService
     {
         public User CreateUser(string name);
+
+        public void DrawUserCard(User user);
     }
 }

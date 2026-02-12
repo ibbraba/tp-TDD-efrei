@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Moq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,13 @@ using TP_Poker_console;
 namespace TD_Poker_Tests
 {
     [TestFixture]
-    public class GameTest
+    public class GameTests
     {
         [Test]
         public void RunGame_LauchesAnInstanceOfGame()
         {
-            var sut = new GameService();
+            var userServiceMock = new Mock<IUserService>();
+            var sut = new GameService(userServiceMock.Object);
 
             Assert.DoesNotThrow(() => { sut.RunGame(); });
         }

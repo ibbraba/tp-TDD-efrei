@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace TP_Poker_console
 {
-    public class User
+    public enum Suit
     {
-        public string Name { get; set; }
-
-        public Card Card1 { get; set; }
-        public Card Card2 { get; set; }
+        Hearts,
+        Diamonds,
+        Clubs,
+        Spades
     }
 }

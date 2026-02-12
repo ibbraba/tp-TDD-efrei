@@ -14,5 +14,9 @@ namespace TP_Poker_console
             user.Name = name;
             return user;
         }
+
+        public void DrawUserCard(User user)
+        {
+        }
     }
 }
