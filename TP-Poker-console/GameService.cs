@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace TP_Poker_console
 {
-    public class UserService : IUserService
+    public class GameService
     {
-        public User CreateUser(string name)
+        public void RunGame()
         {
-            User user = new User();
-            user.Name = name;
-            return user;
+            throw new NotImplementedException();
         }
     }
 }
