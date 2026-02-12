@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TP_Poker_console;
+using TP_Poker_console.Deck;
 
 namespace TD_Poker_Tests
 {

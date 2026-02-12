@@ -1,4 +1,4 @@
-﻿namespace TP_Poker_console
+﻿namespace TP_Poker_console.Game
 {
     public interface IGameService
     {

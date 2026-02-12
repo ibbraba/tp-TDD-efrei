@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TP_Poker_console.Deck.Utils;
 
-namespace TP_Poker_console
+namespace TP_Poker_console.Deck
 {
     public class Deck : IDeck
     {
-        private readonly List<Card> _cards;
+        private readonly List<TP_Poker_console.Deck.Card> _cards;
 
         public Deck()
         {

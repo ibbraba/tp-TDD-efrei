@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TP_Poker_console.Deck;
 
-namespace TP_Poker_console
+namespace TP_Poker_console.User
 {
     public class UserService : IUserService
     {

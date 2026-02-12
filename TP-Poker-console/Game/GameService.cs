@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TP_Poker_console.Deck;
+using TP_Poker_console.User;
 
-namespace TP_Poker_console
+namespace TP_Poker_console.Game
 {
     public class GameService : IGameService
     {
@@ -34,6 +36,13 @@ namespace TP_Poker_console
             var oppenent = _userService.CreateUser("Opponent");
             _userService.DrawUserCards(oppenent);
             Console.WriteLine($"Opponent's cards are: {oppenent.Card1} and {oppenent.Card2}");
+
+            var communityCards = DrawCommunityCards(); Console.WriteLine("Community cards are:");
+        }
+
+        public List<Card> DrawCommunityCards()
+        {
+            throw new NotImplementedException();
         }
     }
 }

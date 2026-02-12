@@ -1,6 +1,9 @@
 ﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using TP_Poker_console;
+using TP_Poker_console.User;
+using TP_Poker_console.Game;
+using TP_Poker_console.Deck;
 
 var host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>

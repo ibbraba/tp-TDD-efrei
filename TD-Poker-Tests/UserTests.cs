@@ -1,5 +1,6 @@
 using Moq;
-using TP_Poker_console;
+using TP_Poker_console.Deck;
+using TP_Poker_console.User;
 
 namespace TD_Poker_Tests
 {
