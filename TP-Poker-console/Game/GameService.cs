@@ -48,7 +48,14 @@ namespace TP_Poker_console.Game
 
         public string CheckResult(User.User player, User.User opponent, List<Card> communityCards)
         {
-            return String.Empty;
+            var playerResult = PokerHandEvaluator.EvaluateHand(new List<Card> { player.Card1, player.Card2 }, communityCards);
+            var opponentResult = PokerHandEvaluator.EvaluateHand(new List<Card> { opponent.Card1, opponent.Card2 }, communityCards);
+
+            int comparison = playerResult.CompareTo(opponentResult);
+
+            if (comparison > 0) return "Player wins";
+            if (comparison < 0) return "Opponent wins";
+            return "Tie";
         }
     }
 }
