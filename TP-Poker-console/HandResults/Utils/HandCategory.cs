@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP_Poker_console.Deck.Utils
+namespace TP_Poker_console.HandResults.Utils
 {
     public enum HandCategory
     {

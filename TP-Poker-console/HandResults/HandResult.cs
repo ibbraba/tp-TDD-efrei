@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TP_Poker_console.Deck.Utils;
+using TP_Poker_console.HandResults.Utils;
 
-namespace TP_Poker_console
+namespace TP_Poker_console.HandResults
 {
     public class HandResult : IComparable<HandResult>
     {

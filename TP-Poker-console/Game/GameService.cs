@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TP_Poker_console.Deck;
+using TP_Poker_console.HandResults;
 using TP_Poker_console.User;
 
 namespace TP_Poker_console.Game
@@ -37,7 +38,11 @@ namespace TP_Poker_console.Game
             _userService.DrawUserCards(oppenent);
             Console.WriteLine($"Opponent's cards are: {oppenent.Card1} and {oppenent.Card2}");
 
-            var communityCards = DrawCommunityCards(); Console.WriteLine("Community cards are:");
+            var communityCards = DrawCommunityCards();
+            Console.WriteLine("Community cards are:");
+            foreach (var card in communityCards) { Console.WriteLine(card); }
+            var result = CheckResult(user, oppenent, communityCards);
+            Console.WriteLine(result);
         }
 
         public List<Card> DrawCommunityCards()
