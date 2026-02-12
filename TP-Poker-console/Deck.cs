@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP_Poker_console
 {
-    public class Deck
+    public class Deck : IDeck
     {
         private readonly List<Card> _cards;
 

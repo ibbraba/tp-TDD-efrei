@@ -20,6 +20,20 @@ namespace TD_Poker_Tests
         }
 
         [Test]
+        public void Draw_Should_Throw_Exception_When_Deck_Is_Empty()
+        {
+            var deck = new Deck();
+
+            // Empty the deck
+            while (deck.Count > 0)
+            {
+                deck.Draw();
+            }
+
+            Assert.Throws<InvalidOperationException>(() => deck.Draw());
+        }
+
+        [Test]
         public void Draw_Should_Return_Card_And_Remove_It_From_Deck()
         { // Arrange
             var deck = new Deck();

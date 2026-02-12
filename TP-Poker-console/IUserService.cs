@@ -10,6 +10,6 @@ namespace TP_Poker_console
     {
         public User CreateUser(string name);
 
-        public void DrawUserCard(User user);
+        public void DrawUserCards(User user);
     }
 }

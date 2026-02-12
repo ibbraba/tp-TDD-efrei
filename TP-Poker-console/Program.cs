@@ -8,6 +8,7 @@ var host = Host.CreateDefaultBuilder(args)
         // Register services here
         services.AddTransient<IUserService, UserService>();
         services.AddTransient<IGameService, GameService>();
+        services.AddSingleton<IDeck, Deck>();
     })
     .Build();
 
