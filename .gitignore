@@ -1,0 +1,12 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/TD-Poker-Tests/bin
+/TD-Poker-Tests/obj
+/TD-Poker-Tests/.vs
+
+/TP-Poker-console/.vs
+/TP-Poker-console/bin
+/TP-Poker-console/obj
+/.vs
